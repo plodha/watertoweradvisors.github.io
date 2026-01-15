@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services — Watertower Advisors</title>
+    <meta name="description" content="Capital raising, M&A, and strategic advisory services." />
+    <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logos/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="assets/logos/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <header class="header">
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="brand-text">WATERTOWER ADVISORS <span class="brand-tag">INVESTMENT BANK</span></span>
+        </a>        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="about.html">About</a>
+          <a class="nav__link" href="services.html" aria-current="page">Services</a>
+          <a class="nav__link" href="industries.html">Industries</a>
+          <a class="nav__link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--image" style="background-image:url('assets/hero/services-hero.jpg')">
+        <div class="container hero__inner">
+          <div class="kicker" style="color:#22D3EE">Our Services</div>
+          <h1>Where we add the most value</h1>
+          <p>High-touch execution, precise positioning, and calibrated outreach driven by data and relationships.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="svc">
+        <div class="container grid grid-3">
+          <article class="card fade-in">
+            <h2 id="svc" class="h3">Capital Raising</h2>
+            <p>Growth equity and venture rounds with a focus on strategic fit, partner value, and long-term alignment.</p>
+          </article>
+          <article class="card fade-in fade-in-delay-1">
+            <h2 class="h3">Sell- &amp; Buy-Side M&amp;A</h2>
+            <p>End-to-end process leadership from preparation through diligence, negotiation, and close.</p>
+          </article>
+          <article class="card fade-in fade-in-delay-2">
+            <h2 class="h3">Strategic Advisory</h2>
+            <p>Board advisory, market mapping, and partnership development to expand optionality and momentum.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="cta-services">
+        <div class="container fade-in">
+          <div class="card" style="background:var(--card)">
+            <div class="grid grid-2">
+              <div>
+                <div class="kicker">Ready to explore?</div>
+                <h2 id="cta-services" class="h2">Let’s map the right path</h2>
+                <p class="lead">We’ll tailor an approach for your stage, sector, and outcome.</p>
+              </div>
+              <div style="display:flex; align-items:center; justify-content:flex-end">
+                <a class="btn btn--primary" href="contact.html">Start a Conversation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container columns">
+        <div class="footer-brand">
+          <span class="brand-text">WATERTOWER ADVISORS <span class="brand-tag">INVESTMENT BANK</span></span>
+        </div>
+        <div style="color:var(--muted)">© <span id="year"></span> Watertower Advisors. All rights reserved.</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

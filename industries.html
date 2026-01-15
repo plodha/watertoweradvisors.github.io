@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Industries — Watertower Advisors</title>
+    <meta name="description" content="Industries we serve, including media tech, consumer internet, and enterprise SaaS & AI." />
+    <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logos/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="assets/logos/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <header class="header">
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="brand-text">WATERTOWER ADVISORS <span class="brand-tag">INVESTMENT BANK</span></span>
+        </a>        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="about.html">About</a>
+          <a class="nav__link" href="services.html">Services</a>
+          <a class="nav__link" href="industries.html" aria-current="page">Industries</a>
+          <a class="nav__link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" aria-labelledby="ind">
+        <div class="container fade-in">
+          <div class="kicker">Industries</div>
+          <h1 id="ind" class="h2">Where we operate</h1>
+          <p class="lead">We focus on technology-driven categories where our network and pattern recognition create outsized value.</p>
+        </div>
+        <div class="container grid grid-3" style="margin-top:32px">
+          <article class="card fade-in">
+            <h2 class="h3">Media &amp; Entertainment Tech</h2>
+            <p>Streaming, creator tools, gaming infrastructure, and next-gen distribution platforms.</p>
+          </article>
+          <article class="card fade-in fade-in-delay-1">
+            <h2 class="h3">Consumer Internet &amp; Web3</h2>
+            <p>Marketplaces, fintech adjacencies, community-driven products, and token-enabled experiences.</p>
+          </article>
+          <article class="card fade-in fade-in-delay-2">
+            <h2 class="h3">Enterprise SaaS &amp; AI</h2>
+            <p>Applied AI, vertical SaaS, data infrastructure, and workflow automation across the enterprise stack.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tight" aria-labelledby="cta-industries">
+        <div class="container fade-in">
+          <div class="card" style="background:var(--card)">
+            <div class="grid grid-2">
+              <div>
+                <div class="kicker">Partner with Us</div>
+                <h2 id="cta-industries" class="h2">Exploring capital or strategic options?</h2>
+                <p class="lead">We’ll share perspective and an initial path within a quick intro call.</p>
+              </div>
+              <div style="display:flex; align-items:center; justify-content:flex-end">
+                <a class="btn btn--primary" href="contact.html">Schedule a Call</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container columns">
+        <div class="footer-brand">
+          <span class="brand-text">WATERTOWER ADVISORS <span class="brand-tag">INVESTMENT BANK</span></span>
+        </div>
+        <div style="color:var(--muted)">© <span id="year"></span> Watertower Advisors. All rights reserved.</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
