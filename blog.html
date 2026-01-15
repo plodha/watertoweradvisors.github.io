@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Watertower Advisors</title>
+    <meta name="description" content="Insights on venture capital, M&A, and strategic advisory from Watertower Advisors." />
+    <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/logos/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="assets/logos/apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <header class="header">
+      <div class="container nav">
+        <a class="nav__brand" href="index.html">
+          <span class="brand-text">WATERTOWER ADVISORS <span class="brand-tag">INVESTMENT BANK</span></span>
+        </a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav__links" aria-label="Primary">
+          <a class="nav__link" href="about.html">About</a>
+          <a class="nav__link" href="services.html">Services</a>
+          <a class="nav__link" href="industries.html">Industries</a>
+          <a class="nav__link" href="blog.html" aria-current="page">Blog</a>
+          <a class="nav__link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" aria-labelledby="blog-heading">
+        <div class="container fade-in">
+          <div class="kicker">Insights & Analysis</div>
+          <h1 id="blog-heading" class="h2">Latest from Watertower</h1>
+          <p class="lead">Perspectives on venture capital, M&A strategy, and the evolving landscape of growth-stage investing.</p>
+        </div>
+        
+        <div class="container" style="margin-top:40px">
+          <!-- Blog posts will be dynamically loaded here -->
+          <div id="blog-posts" class="blog-grid">
+            <div class="blog-loading">
+              <div class="loader-spinner"></div>
+              <p style="margin-top:16px; color:var(--muted)">Loading posts...</p>
+            </div>
+          </div>
+          
+          <!-- No posts message (hidden by default) -->
+          <div id="no-posts" class="no-posts" style="display:none">
+            <p style="color:var(--muted); text-align:center">No posts available at this time. Check back soon!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container columns">
+        <div class="footer-brand">
+          <span class="brand-text">WATERTOWER ADVISORS <span class="brand-tag">INVESTMENT BANK</span></span>
+        </div>
+        <div style="color:var(--muted)">© <span id="year"></span> Watertower Advisors. All rights reserved.</div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
