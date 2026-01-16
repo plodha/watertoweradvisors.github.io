@@ -123,3 +123,28 @@ const yearElement = document.getElementById('year');
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
+
+// ==== Industry Verticals Toggle ====
+document.addEventListener('DOMContentLoaded', () => {
+  const industryToggles = document.querySelectorAll('.industry-toggle');
+  
+  industryToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const targetId = toggle.getAttribute('aria-controls');
+      const targetElement = document.getElementById(targetId);
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      
+      if (targetElement) {
+        if (isExpanded) {
+          toggle.setAttribute('aria-expanded', 'false');
+          targetElement.hidden = true;
+          toggle.querySelector('span').textContent = 'View Verticals';
+        } else {
+          toggle.setAttribute('aria-expanded', 'true');
+          targetElement.hidden = false;
+          toggle.querySelector('span').textContent = 'Hide Verticals';
+        }
+      }
+    });
+  });
+});
