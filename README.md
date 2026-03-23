@@ -180,13 +180,21 @@ To add/remove navigation items, edit the `<nav class="nav__links">` section in e
 
 ### Quick Setup
 
+> **ACTION REQUIRED**: Update the Medium URL in `blog.js` before launching the blog.
+
 1. Open `blog.js`
-2. Update the `MEDIUM_URL` constant:
+2. Find line 6 and update `MEDIUM_URL` to the correct Watertower Advisors Medium account:
 
 ```javascript
-const MEDIUM_URL = 'https://yourusername.medium.com';
-// or
-const MEDIUM_URL = 'https://medium.com/@yourusername';
+// blog.js — line 6
+const MEDIUM_URL = 'https://medium.com/@watertoweradvisors'; // <-- UPDATE THIS
+```
+
+Accepted formats:
+```javascript
+const MEDIUM_URL = 'https://medium.com/@watertoweradvisors';
+// or a custom domain if you have one:
+const MEDIUM_URL = 'https://watertoweradvisors.medium.com';
 ```
 
 3. Save the file - **that's it!**

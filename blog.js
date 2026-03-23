@@ -3,7 +3,7 @@
 // Examples:
 //   - Custom domain: 'https://medium.ivangarzab.com'
 //   - Username: 'https://medium.com/@yourusername'
-const MEDIUM_URL = 'https://tateg.medium.com'; // Change this to your Medium URL
+const MEDIUM_URL = 'https://medium.com/@watertoweradvisors'; // TODO: update with correct Medium username/URL — see README
 
 // Fallback posts (shown only if Medium fetch fails)
 const fallbackPosts = [];
