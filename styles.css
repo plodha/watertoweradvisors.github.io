@@ -181,6 +181,25 @@ a{color:inherit; transition:var(--transition)}
 /* ==== Footer ==== */
 .footer{border-top:1px solid var(--line)}
 .footer .columns{display:flex; flex-wrap:wrap; gap:32px; justify-content:space-between; align-items:center; padding:32px 0}
+.footer-grid{display:flex; flex-wrap:wrap; gap:40px; justify-content:space-between; align-items:flex-start; padding:40px 0 24px}
+.footer-contact,.footer-legal{display:flex; flex-direction:column; gap:8px}
+.footer-link{color:var(--muted); text-decoration:none; font-size:14px; transition:color 0.2s}
+.footer-link:hover{color:var(--ink)}
+.footer-bottom{border-top:1px solid var(--line); padding:20px 0; font-size:14px}
+
+/* ==== Legal Page ==== */
+.legal-nav{display:flex; flex-wrap:wrap; gap:12px; margin-bottom:16px}
+.legal-nav-link{color:var(--accent); text-decoration:none; font-size:14px; font-weight:600; padding:8px 16px; border:1px solid var(--accent); border-radius:6px; transition:var(--transition)}
+.legal-nav-link:hover{background:var(--accent); color:#fff}
+.legal-section{border-top:1px solid var(--line)}
+.legal-content{max-width:800px}
+.legal-header{margin-bottom:32px}
+.legal-date{color:var(--muted); font-size:14px; margin-top:8px}
+.legal-content h3{color:var(--ink); font-size:18px; font-weight:600; margin:32px 0 12px}
+.legal-content p{color:var(--muted); line-height:1.7; margin-bottom:16px}
+.legal-content ul{color:var(--muted); line-height:1.7; padding-left:24px; margin-bottom:16px}
+.legal-content li{margin-bottom:6px}
+.legal-content code{background:var(--card); padding:2px 6px; border-radius:4px; font-size:13px; font-family:monospace}
 
 /* ==== Contact ==== */
 .form{display:grid; gap:16px; max-width:640px}
@@ -341,7 +360,8 @@ body.contact-page main.contact-fullpage{
   .footer .columns{
     flex-direction:column; align-items:flex-start; gap:16px; text-align:left;
   }
-  .footer-brand{margin-bottom:8px}
+  .footer-grid{flex-direction:column; gap:24px; padding:32px 0 20px}
+  .footer-brand{margin-bottom:0}
   .footer-brand .brand-text{font-size:13px}
   .footer-brand .brand-tag{font-size:10px; padding:2px 6px}
   

@@ -14,7 +14,11 @@
       "Bash(done)",
       "Bash(NAVY='assets/Watertower Advisors Logo Package/Digital \\(RGB\\)/Logomarks/Logomark V1/PNG \\(Transparent Background\\)/WatertowerAdvisors_rgb_logomark_v1_navy_cropped1080px.png')",
       "Bash(WHITE_ORANGE='assets/Watertower Advisors Logo Package/Digital \\(RGB\\)/Logomarks/Logomark V1/PNG \\(Transparent Background\\)/Watertower Advisor_logomark_v1_white-orange_cropped1080px.png')",
-      "Bash(sed -i '' \"s|$WHITE_ORANGE|$NAVY|g\" \"$f\")"
+      "Bash(sed -i '' \"s|$WHITE_ORANGE|$NAVY|g\" \"$f\")",
+      "Bash(grep -E \"\\\\.\\(html|xml|txt\\)$\")",
+      "Bash(ls -la /Users/pranavlodha/Documents/watertower.github.io/*.xml /Users/pranavlodha/Documents/watertower.github.io/*.txt)",
+      "Bash(wc -c /Users/pranavlodha/Documents/watertower.github.io/styles.css)",
+      "WebSearch"
     ]
   }
 }
